@@ -10,7 +10,7 @@ public class searchnimber{
         boolean found=false;
         //線性搜尋
         for(int num:n){
-            System.out.println("比對中:x="+x+",中間元素="+n[mid]);
+            System.out.println("比對中:x="+x+",中間元素="+n[num]);
             if(num==x){
                 found=true;
                 break;
@@ -18,7 +18,9 @@ public class searchnimber{
         }
         //輸入結果
         if(found){
-
+            System.out.println("找到了！數字 " + x + " 存在於陣列中。");
+        } else {
+            System.out.println("找不到，數字 " + x + " 不在陣列中。");
         }
     }
 }
